@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Adidas Algeria</title>
+    <link rel="stylesheet" href="external.css">
+</head>
+<body class="auth-page">
+    <div class="auth-container">
+        <div class="auth-box">
+            <a href="index.html" class="logo-link">
+                <svg class="logo-svg" viewBox="0 0 50 50">
+                    <path d="M1.05 17L16 9l15 8-15 8zm16 10l15-8 15 8-15 8z" fill="currentColor"/>
+                </svg>
+            </a>
+            <div class="auth-tabs">
+                <button class="auth-tab active" data-tab="login">Login</button>
+                <button class="auth-tab" data-tab="signup">Sign Up</button>
+            </div>
+            
+            <form class="auth-form login-form">
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" required autocomplete="email">
+                    <span class="form-icon">📧</span>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" required>
+                    <span class="form-icon">🔒</span>
+                    <button type="button" class="toggle-password">👁️</button>
+                </div>
+                <div class="form-options">
+                    <label class="remember-me">
+                        <input type="checkbox">
+                        <span>Remember me</span>
+                    </label>
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                </div>
+                <button type="submit" class="auth-submit">Login</button>
+                
+                <div class="social-auth">
+                    <p>Or continue with</p>
+                    <div class="social-buttons">
+                        <button type="button" class="social-btn">Google</button>
+                        <button type="button" class="social-btn">Facebook</button>
+                    </div>
+                </div>
+            </form>
+
+            <form class="auth-form signup-form hidden">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" required>
+                    <span class="form-icon">👤</span>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" required>
+                    <span class="form-icon">📧</span>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" required>
+                    <span class="form-icon">🔒</span>
+                    <button type="button" class="toggle-password">👁️</button>
+                </div>
+                <div class="form-group">
+                    <label>Confirm Password</label>
+                    <input type="password" required>
+                    <span class="form-icon">🔒</span>
+                </div>
+                <div class="form-options">
+                    <label class="terms">
+                        <input type="checkbox" required>
+                        <span>I agree to the Terms & Conditions</span>
+                    </label>
+                </div>
+                <button type="submit" class="auth-submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
